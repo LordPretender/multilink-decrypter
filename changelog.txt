@@ -1,0 +1,22 @@
+2013-08-18 : Prise en charge d'un nouveau format de lien pour MultiUp.
+2013-07-23 : Prise en charge du Multi-Uploader FlashMirrors.
+2013-07-22 : Prise en charge d'un nouveau format de lien pour MultiUp.
+2013-07-19 : Tous les liens sont désormais affichés à propos de JHeberg.
+2013-07-17 : Le test de validité des liens est de nouveau opérationnel.
+2013-07-15 : Go4Up est de nouveau fonctionnel.
+2013-06-12 : Prise en charge du Multi-Uploader MirrorCreator.
+2013-06-11 : Optimisation des Multi-Uploaders Multip-Up et MultiUpload.
+2013-06-09 : La vérification des liens est de nouveau opérationnel. UrlChecker semble avoir effectué quelques changements dans leur API.
+2013-06-06 : Prise en charge du Multi-Uploader Multip-Up.
+2013-06-05 : Prise en charge du Multi-Uploader MultiUp.
+2013-05-29 : Amélioration du procédé de lecture des vrais liens vers les plateformes permettant de réduire considérablement le temps de chargement des liens.
+2013-05-27 : Prise en charge du Multi-Uploader JHeberg.
+2013-05-26 : Il est désormais possible de tester la validité des liens de Mirorii.
+2013-05-26 : Go4Up est de nouveaul fonctionnel. De plus, on récupère désormais les vrais liens vers les plateformes.
+2013-05-12 : Prise en charge du Multi-Uploader ExoShare.
+2013-05-11 : Refonte des pages statiques. Il est désormais possible de saisir des liens vers des plateformes de stockage.
+2013-05-11 : Mise en place du test de validité des liens. Javascript doit être actif sur le navigateur.
+2013-05-08 : Prise en charge de Mirorii. Il est impossible de récupérer les vrais liens et il ne sera donc pas possible de tester la validité de ces derniers.
+2013-05-07 : Amélioratin du contenu de la page "A propos".
+2013-05-06 : Nouvelle version du site en cours. Implémentation de CodeIgniter.
+2013-05-05 : Ouverture du site.

@@ -1,0 +1,31 @@
+# https://www.craym.eu/tutoriels/referencement/flag_url_rewriting.html
+# https://www.craym.eu/tutoriels/referencement/flag_url_rewriting.html#L
+
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+
+# Traitement pour ajouter le WWW.
+RewriteCond %{HTTP_HOST} !^www
+RewriteRule (.*) http://www.%{HTTP_HOST}$1 [L,R]
+
+# Traitement pour remplacer le / final par .html
+RewriteCond %{REQUEST_URI} ^([^.]+)/$ 
+RewriteRule ^(.*)$ http://%{HTTP_HOST}%1\.html [R=301,L] 
+
+# Traitement pour ajouter le .html à la fin
+RewriteCond %{REQUEST_URI} (/[^.]+)(\.html){0}$ 
+RewriteRule ^(.*)$ http://%{HTTP_HOST}%{REQUEST_URI}\.html [R=301,L] 
+
+# Pour éviter les doublons d'URL, on redirige /accueil/index.html vers /
+RewriteCond %{REQUEST_URI} ^/accueil/index\.html$ 
+RewriteRule ^(.*)$ http://%{HTTP_HOST} [R=301,L] 
+
+# Pour éviter les doublons d'URL, on enlève le index.html
+RewriteCond %{REQUEST_URI} ^(.+)/index\.html$ 
+RewriteRule ^(.*)$ http://%{HTTP_HOST}%1\.html [R=301,L] 
+
+RewriteCond $1 !^(index\.php|assets|robots\.txt|favicon\.ico)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1[L,QSA]

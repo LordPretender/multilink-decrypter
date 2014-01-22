@@ -1,0 +1,30 @@
+
+/* Styles to be dynamically generated */
+
+#site-logo {
+	text-align: center;
+	padding: 30px 0 30px 0; 
+	font-variant: small-caps;
+	
+	font-size: 48px;
+	font-weight: 900;
+	letter-spacing: -1px;
+	text-shadow: 0 1px 0 #ffffff;
+	
+	-webkit-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+}
+#site-logo a:hover {
+	color: #eb5426;
+	
+	-webkit-transform: scale(0.95);
+	-moz-transform: scale(0.95);
+	-ms-transform: scale(0.95);
+	-o-transform: scale(0.95);
+	transform: scale(0.95);
+}
+
+nav[role=navigation] { text-align: left; }
